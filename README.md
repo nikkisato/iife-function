@@ -19,13 +19,13 @@
   [x] Pass an anonymous function as the argument
   [x] Pass a function declaration
 [] Write an IIFE 3 ways (the IIFE can do anything):
-[] anonymous function expression
-[] anonymous function declaration
-[] a function declaration
-[] Create an object that has:
-[] 2 properties like first and last name
-[] has a function that can log those properties
-[] Have a look at this code - you should see the differences between function expressions and declarations as properties of an object.
+  [] anonymous function expression
+  [] anonymous function declaration
+  [] a function declaration
+[x] Create an object that has:
+  [x] 2 properties like first and last name
+  [x] has a function that can log those properties
+[x] Have a look at this code - you should see the differences between function expressions and declarations as properties of an object.
 ` const chris = {
 name: "Chris",
 getName() { // function declaration

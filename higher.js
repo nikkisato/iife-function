@@ -7,21 +7,25 @@
 // Pass a function declaration
 
 // Pass an anonymous function as the argument
-const callback1 = function () {
-	console.log('anonymous function');
+const callback = (item) => {
+	console.log('anonymous function', item);
 };
 
-function higherOrderFunction1(callback1) {
-	callback1();
-	console.log('higher order function', callback1);
+function higherOrderFunction1(cb) {
+	callback();
 }
+
+higherOrderFunction1(callback);
 
 // Pass a function declaration
 function callback2() {
 	console.log('function declaration');
 }
 
-function higherOrderFunction2(callback2) {
+function higherOrderFunction2(cb) {
 	callback2();
 	console.log('higher order function', callback2);
 }
+
+
+higherOrderFunction2(callback2);

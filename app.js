@@ -14,13 +14,11 @@ greet1();
 // can also have a anonymous function expression
 //const functionGreet = function() {}
 
-const functionGreet = function greet2() {
+const functionGreet = () => {
 	console.log('greet2', this);
 	// app.js:16 Uncaught ReferenceError: greet2 is not defined
 };
-greet2();
+functionGreet();
 
 /* Hoisting */
 /* if it's a function express hoisting has to be after the function expression */
-
-
